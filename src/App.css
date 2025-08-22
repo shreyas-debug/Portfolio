@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+
+.home-section-new {
+  position: relative;
+  padding-top: 150px !important;
+  padding-bottom: 100px !important;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-content-new {
+  padding: 2rem 0;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-header-new {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.home-header-new .heading {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.home-header-new .heading-sub {
+  font-size: 1.5em;
+  color: #6e6e73;
+  margin-bottom: 20px;
+}
+
+.home-about-body-brief {
+  font-size: 1.1em;
+  max-width: 550px;
+  color: #1d1d1f;
+}
+
+.home-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section-new {
+  position: relative;
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  background-color: #ffffff;
+}
+
+.project-heading-new {
+  color: #1d1d1f !important;
+  font-size: 2.3em !important;
+  font-weight: 600 !important;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.project-card-new {
+  padding: 20px;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.4s ease-in-out !important;
+  border-radius: 15px !important;
+  border: none !important;
+  height: 100%;
+}
+
+.project-card-view:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.about-section-new {
+  background-color: #f5f5f7;
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  color: #1d1d1f;
+}
+
+.quote-card-view-new {
+  border: none !important;
+  background-color: transparent !important;
+  color: #1d1d1f !important;
+}
+
+.quote-card-view-new .blockquote {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(138, 98, 169, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(138, 98, 169, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(159, 122, 189, 0.883) !important;
+}
+
+.resume-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-color: #ffffff;
+}
+
+.resume {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.footer-new {
+  background-color: #1d1d1f;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-body-new {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-email {
+  color: #a1a1a6;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #ffffff;
+}
+
+.footer-icons-new {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons-new {
+  display: inline-block !important;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.social-icons-new a {
+  color: white !important;
+  font-size: 1.8em;
+  transition: color 0.3s ease;
+}
+
+.social-icons-new a:hover {
+  color: #a1a1a6 !important;
+}
+
+/* Primary Button Style */
+.btn-primary {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #7c4bb3 !important;
+  border-color: #7c4bb3 !important;
+}
+
+/* --- Fractal Tree Animation --- */
+
+.fractal-canvas-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.fractal-canvas {
+  display: block;
+}
+
+/* --- Navbar Styles --- */
+
+.navbar {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  transition: all 0.3s ease-out 0s !important;
+  background-color: transparent !important;
+}
+
+.navbar.sticky {
+  background-color: #f5f5f7e3 !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+  backdrop-filter: blur(15px) !important;
+}
+
+.navbar-toggler {
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-nav .nav-link {
+  color: #1d1d1f !important;
+  font-weight: 500;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #623686 !important;
+}
+
+.main-name-nav {
+  color: #1d1d1f;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
